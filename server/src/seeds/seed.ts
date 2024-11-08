@@ -3,7 +3,7 @@ import { Word } from '../models/index.js';
 import cleanDB from './cleanDB.js';
 
 import wordData from './wordSeeds.json' with { type: 'json' };
-
+// test
 try {
   await db();
   await cleanDB();
