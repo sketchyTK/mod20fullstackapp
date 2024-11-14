@@ -20,4 +20,6 @@ workflows:
   run-tests:
     jobs:
       - start-server
-      # TODO: Add a new job to run the component tests
+      - cypress/run:
+      name: run-component-tests
+      cypress-command: npx cypress run --component
